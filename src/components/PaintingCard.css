@@ -1,0 +1,46 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1179px;
+  max-height: 2556px;
+  position: relative;
+}
+
+.painting-card {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.painting-card img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain; /* Ensure the image scales properly */
+  border-radius: 10px 10px 0 0;
+}
+
+.clickable-area {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  cursor: pointer;
+}
+
+.clickable-area.left {
+  left: 0;
+}
+
+.clickable-area.right {
+  right: 0;
+}
