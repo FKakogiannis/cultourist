@@ -10,7 +10,7 @@ const App = () => {
   const [savedPaintings, setSavedPaintings] = useState([]);
 
   return (
-    <Router>
+    <Router basename="/cultourist">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home savedPaintings={savedPaintings} setSavedPaintings={setSavedPaintings} />} />
